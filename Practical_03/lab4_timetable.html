@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwise Time Table - GHRCEMN</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-container {
+            width: 100%;
+            max-width: 1100px;
+            background: #fff;
+            padding: 25px 30px;
+            border: 2px solid #000;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .header h2 {
+            font-size: 13px;
+            font-weight: 600;
+            margin: 2px 0;
+        }
+
+        .header h3 {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .header .naac {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 2px;
+        }
+
+        .dept-title {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .dept-title h2 {
+            font-size: 16px;
+            font-weight: 800;
+            text-decoration: underline;
+        }
+
+        .dept-title h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 3px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 8px 0 4px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 5px 3px;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .recess-col {
+            font-weight: bold;
+            letter-spacing: 2px;
+            width: 25px;
+            background-color: #fafafa;
+        }
+
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .subject-table-container {
+            flex: 2.8;
+        }
+
+        .side-tables {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .subject-table th, .subject-table td {
+            text-align: left;
+            padding: 4px 6px;
+        }
+
+        .subject-table td:nth-child(2),
+        .subject-table td:nth-child(4) {
+            text-align: center;
+        }
+
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 10px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .sig-block {
+            flex: 1;
+            padding: 0 4px;
+        }
+
+        .sig-space {
+            height: 35px;
+        }
+
+        .footer-branding {
+            margin-top: 25px;
+            border-top: 1px solid #777;
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #444;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>G H Raisoni College of Engineering &amp; Management</h1>
+            <h2>(Formerly Known as G H Raisoni Institute of Engineering &amp; Technology, Nagpur)</h2>
+            <h3>An Autonomous Institute Affiliated to Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur</h3>
+            <div class="naac">Accredited by NAAC with "A+" Grade</div>
+        </div>
+
+        <!-- Department & Session Info -->
+        <div class="dept-title">
+            <h2>Department of Computer Science and Engineering (Cyber Security)</h2>
+            <h3>CLASSWISE TIME TABLE</h3>
+            <p style="font-size: 13px; font-weight: bold; margin-top: 2px;">SESSION 2026-27 Odd Semester</p>
+            <p style="font-size: 13px; font-weight: bold;">SEM- VII / Section- H</p>
+        </div>
+
+        <div class="meta-info">
+            <span>Class-Room No.: C-1-13</span>
+            <span>w.e.f.: 16/06/2026</span>
+        </div>
+
+        <!-- Main Timetable Grid -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">Day/Time</th>
+                    <th style="width: 13%;">12:10 pm to 13:05 pm</th>
+                    <th style="width: 13%;">1:05 pm to 2:00 pm</th>
+                    <th class="recess-col" style="width: 3%;">2:00 to 2:20 pm</th>
+                    <th style="width: 13%;">2:20 pm to 03:15 pm</th>
+                    <th style="width: 13%;">3:15 pm to 04:10 pm</th>
+                    <th class="recess-col" style="width: 3%;">4:10 pm to 4:15 pm</th>
+                    <th style="width: 14%;">4:15 pm to 5:10 pm</th>
+                    <th style="width: 14%;">5:10 pm to 6:05 pm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- MON -->
+                <tr>
+                    <td><strong>MON</strong></td>
+                    <td>ACS<br>(SK)</td>
+                    <td>AIS<br>(AD)</td>
+                    <td rowspan="6" class="recess-col">R<br>E<br>C<br>E<br>S<br>S</td>
+                    <td>EAR<br>(SZ)</td>
+                    <td>EAR<br>(SZ)</td>
+                    <td rowspan="6" class="recess-col">R<br>E<br>C<br>E<br>S<br>S</td>
+                    <td>MD5<br>(AS)</td>
+                    <td>Sports</td>
+                </tr>
+                <!-- TUES -->
+                <tr>
+                    <td><strong>TUES</strong></td>
+                    <td colspan="2">
+                        WT-A2 / ACS-A3<br>
+                        <small>SV(A-111) / SK(C-108)</small>
+                    </td>
+                    <td>Club Activity</td>
+                    <td>MD5<br>(AS)</td>
+                    <td colspan="2">
+                        WT-A1 / ACS-A2<br>
+                        <small>SV(A-111) / SK(C-108)</small>
+                    </td>
+                </tr>
+                <!-- WED -->
+                <tr>
+                    <td><strong>WED</strong></td>
+                    <td>AIS<br>(AD)</td>
+                    <td>MD5<br>(AS)</td>
+                    <td>EAR<br>(SZ)</td>
+                    <td>WT<br>(SV)</td>
+                    <td>APTITUDE<br>(CD)</td>
+                    <td>Forum Activity</td>
+                </tr>
+                <!-- THU -->
+                <tr>
+                    <td><strong>THU</strong></td>
+                    <td>WT<br>(SV)</td>
+                    <td>ACS<br>(SK)</td>
+                    <td colspan="2">
+                        WT-A3 / ACS-A1<br>
+                        <small>SV(A-111) / SK(C-108)</small>
+                    </td>
+                    <td>Project</td>
+                    <td>Library</td>
+                </tr>
+                <!-- FRI -->
+                <tr>
+                    <td><strong>FRI</strong></td>
+                    <td>EAR<br>(SZ)</td>
+                    <td>ACS<br>(SK)</td>
+                    <td>AIS<br>(AD)</td>
+                    <td>MD5<br>(AS)</td>
+                    <td colspan="2">Project</td>
+                </tr>
+                <!-- SAT -->
+                <tr>
+                    <td><strong>SAT</strong></td>
+                    <td colspan="2">Forum Activity</td>
+                    <td colspan="2">Forum Activity</td>
+                    <td colspan="2">Forum Activity</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Lower Section: Subject Details & Lab/Batch Info -->
+        <div class="bottom-section">
+            <!-- Subjects Table -->
+            <div class="subject-table-container">
+                <table class="subject-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 42%;">Full Name of Subject (Initial)</th>
+                            <th style="width: 20%;">Course Code</th>
+                            <th style="width: 28%;">Name of faculty</th>
+                            <th style="width: 10%;">Faculty Initials</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Technology (T+P)</td>
+                            <td>23BTCYL404</td>
+                            <td>Prof. Saurabh Vyas</td>
+                            <td>SV</td>
+                        </tr>
+                        <tr>
+                            <td>Applied Cyber Security</td>
+                            <td>23BTCYL401</td>
+                            <td>Prof. Shalini Kumari</td>
+                            <td>SK</td>
+                        </tr>
+                        <tr>
+                            <td>Advance Information Security</td>
+                            <td>23BTCYL403</td>
+                            <td>Prof. Ashwini Durbude</td>
+                            <td>AD</td>
+                        </tr>
+                        <tr>
+                            <td>PE-IV EAR Evidence Acquisition Recovery</td>
+                            <td>23BTCYL405</td>
+                            <td>Prof. Sadaf Zama</td>
+                            <td>SZ</td>
+                        </tr>
+                        <tr>
+                            <td>Project</td>
+                            <td>23BTCYP431</td>
+                            <td>All Faculty</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>MD5 :Python Programming</td>
+                            <td>23BTCYL424</td>
+                            <td>Prof. Amit Sagale</td>
+                            <td>AS</td>
+                        </tr>
+                        <tr>
+                            <td>Aptitude (P)</td>
+                            <td>-</td>
+                            <td>Mrs. Chaitra Dhote</td>
+                            <td>CD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Labs and Batches Tables -->
+            <div class="side-tables">
+                <!-- Practical Labs -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Practical Labs</th>
+                            <th>Room No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WT</td>
+                            <td>A-1-11</td>
+                        </tr>
+                        <tr>
+                            <td>ACS</td>
+                            <td>C-1-08</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Practical Batches -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Practical Batches</th>
+                            <th>Roll No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A1</td>
+                            <td>1-23</td>
+                        </tr>
+                        <tr>
+                            <td>A2</td>
+                            <td>24-46</td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>47-69</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Signatures -->
+        <div class="signatures">
+            <div class="sig-block">
+                <div class="sig-space"></div>
+                <div>Mr. Saurabh Vyas / Mr. Amit Sagale</div>
+                <div><strong>Timetable In charge / Co-In charge</strong></div>
+            </div>
+            <div class="sig-block">
+                <div class="sig-space"></div>
+                <div>Dr. Priti Bihade</div>
+                <div><strong>HoD CSE-CYS</strong></div>
+            </div>
+            <div class="sig-block">
+                <div class="sig-space"></div>
+                <div>Dr. Swati Dixit</div>
+                <div><strong>Dean Academics</strong></div>
+            </div>
+            <div class="sig-block">
+                <div class="sig-space"></div>
+                <div>Dr. Achal Shahare</div>
+                <div><strong>Director GHRCEMN</strong></div>
+            </div>
+            <div class="sig-block">
+                <div class="sig-space"></div>
+                <div>Dr. Vivek Kapur</div>
+                <div><strong>Campus Director</strong></div>
+            </div>
+        </div>
+
+        <!-- Footer Branding -->
+        <div class="footer-branding">
+            <span><strong>raisoni</strong> EDUCATION</span>
+            <span>Nagpur | Pune | Jalgaon | Amravati | Pandhurna | Bhandara</span>
+        </div>
+    </div>
+</body>
+
+</html>

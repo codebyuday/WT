@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2 - HTML Tags, Elements & Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #ecf0f1;
+        }
+
+        .output {
+            background: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 10px 0;
+        }
+
+        .tree {
+            font-family: monospace;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practical 2: HTML Tags, Elements & Attributes</h1>
+
+    <!-- SECTION 1: HTML TAGS OVERVIEW -->
+    <div class="section">
+        <h2>1. HTML Tags Overview</h2>
+        <p>A tag tells the browser how to display content.</p>
+
+        <h3>Container Tags (require opening and closing)</h3>
+        <p>This is a paragraph inside &lt;p&gt; tags.</p>
+        <h3>This is heading inside &lt;h1&gt; tags</h3>
+
+        <h3>Empty Tags (no closing tag needed)</h3>
+        <p>Line break below:<br>This text is after the break.</p>
+        <hr>
+        <p>Horizontal line above using &lt;hr&gt;</p>
+    </div>
+
+    <!-- SECTION 2: HTML DOCUMENT TREE -->
+    <div class="section">
+        <h2>2. HTML Document Tree</h2>
+        <div class="tree">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+
+        <table>
+            <tr><th>Tag</th><th>Purpose</th></tr>
+            <tr><td>&lt;!DOCTYPE html&gt;</td><td>Declares HTML5 document</td></tr>
+            <tr><td>&lt;html&gt;</td><td>Root element</td></tr>
+            <tr><td>&lt;head&gt;</td><td>Contains metadata</td></tr>
+            <tr><td>&lt;title&gt;</td><td>Browser title</td></tr>
+            <tr><td>&lt;body&gt;</td><td>Visible webpage contents</td></tr>
+        </table>
+    </div>
+
+    <!-- SECTION 3: PRESENTATIONAL TAGS -->
+    <div class="section">
+        <h2>3. Presentational Tags</h2>
+        <table>
+            <tr><th>Tag</th><th>Description</th><th>Example Output</th></tr>
+            <tr><td>&lt;b&gt;</td><td>Bold</td><td><b>This is bold text</b></td></tr>
+            <tr><td>&lt;i&gt;</td><td>Italic</td><td><i>This is italic text</i></td></tr>
+            <tr><td>&lt;u&gt;</td><td>Underline</td><td><u>This is underlined text</u></td></tr>
+            <tr><td>&lt;mark&gt;</td><td>Highlight</td><td><mark>This is highlighted text</mark></td></tr>
+            <tr><td>&lt;small&gt;</td><td>Small Text</td><td><small>This is small text</small></td></tr>
+            <tr><td>&lt;sup&gt;</td><td>Superscript</td><td>X<sup>2</sup></td></tr>
+            <tr><td>&lt;sub&gt;</td><td>Subscript</td><td>H<sub>2</sub>O</td></tr>
+            <tr><td>&lt;strong&gt;</td><td>Important Text</td><td><strong>This is important</strong></td></tr>
+            <tr><td>&lt;em&gt;</td><td>Emphasized Text</td><td><em>This is emphasized</em></td></tr>
+        </table>
+    </div>
+
+    <!-- SECTION 4: HEADING TAGS -->
+    <div class="section">
+        <h2>4. Heading Tags</h2>
+        <h1>This is Heading 1 (largest)</h1>
+        <h2>This is Heading 2</h2>
+        <h3>This is Heading 3</h3>
+        <h4>This is Heading 4</h4>
+        <h5>This is Heading 5</h5>
+        <h6>This is Heading 6 (smallest)</h6>
+    </div>
+
+    <!-- SECTION 5: PARAGRAPH TAGS -->
+    <div class="section">
+        <h2>5. Paragraph Tags</h2>
+        <p>Welcome to Web Technology Laboratory. This is a paragraph created using the &lt;p&gt; tag.</p>
+        <p>Paragraphs are block-level elements. They start on a new line and take the full width available.</p>
+    </div>
+
+    <!-- SECTION 6: LIST TAGS -->
+    <div class="section">
+        <h2>6. List Tags</h2>
+
+        <h3>Ordered List (Numbered)</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Unordered List (Bullets)</h3>
+        <ul>
+            <li>Computer</li>
+            <li>Laptop</li>
+            <li>Printer</li>
+        </ul>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>HyperText Markup Language - Structure</dd>
+            <dt><strong>CSS</strong></dt>
+            <dd>Cascading Style Sheets - Styling</dd>
+            <dt><strong>JavaScript</strong></dt>
+            <dd>Programming Language - Interactivity</dd>
+        </dl>
+    </div>
+
+    <!-- SECTION 7: IMAGE TAG -->
+    <div class="section">
+        <h2>7. Image Tag</h2>
+        <p>The &lt;img&gt; tag is an empty tag with attributes:</p>
+        <ul>
+            <li><strong>src</strong> - Source path of the image</li>
+            <li><strong>alt</strong> - Alternative text if image fails to load</li>
+            <li><strong>width</strong> - Width of the image</li>
+            <li><strong>height</strong> - Height of the image</li>
+        </ul>
+
+        <h3>Local Image:</h3>
+        <img src="images/ezgif-61058bc1f858339e.jpg" alt="College" width="300">
+
+        <h3>External Image (from URL):</h3>
+        <img src="https://lh3.googleusercontent.com/1lFzlKFj_qw8DfaioJCL1Cipv7oddt9xKzo4IiuPE92g0PkNDA_XZ2CPtICZb5MssHYoIhYwXurX5n13wZWcv119IFvWnYmvGPg5qcqg=s0-rw" alt="External Image" width="300">
+    </div>
+
+    <!-- SECTION 8: ANCHOR TAG -->
+    <div class="section">
+        <h2>8. Anchor Tag</h2>
+        <p>The &lt;a&gt; tag creates hyperlinks.</p>
+        <ul>
+            <li><strong>href</strong> - URL of the link</li>
+            <li><strong>target</strong> - Where to open (_blank = new tab)</li>
+        </ul>
+        <a href="https://ghrcemn.raisoni.net/" target="_blank">Welcome to GHRCEMN</a>
+        <br><br>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+        <br><br>
+        <a href="https://github.com" target="_blank">Visit GitHub</a>
+    </div>
+
+    <!-- SUMMARY TABLE -->
+    <div class="section">
+        <h2>Summary - Common HTML Tags</h2>
+        <table>
+            <tr><th>Tag</th><th>Description</th><th>Type</th></tr>
+            <tr><td>&lt;h1&gt; to &lt;h6&gt;</td><td>Headings</td><td>Container</td></tr>
+            <tr><td>&lt;p&gt;</td><td>Paragraph</td><td>Container</td></tr>
+            <tr><td>&lt;br&gt;</td><td>Line Break</td><td>Empty</td></tr>
+            <tr><td>&lt;hr&gt;</td><td>Horizontal Line</td><td>Empty</td></tr>
+            <tr><td>&lt;img&gt;</td><td>Image</td><td>Empty</td></tr>
+            <tr><td>&lt;a&gt;</td><td>Hyperlink</td><td>Container</td></tr>
+            <tr><td>&lt;ul&gt;</td><td>Unordered List</td><td>Container</td></tr>
+            <tr><td>&lt;ol&gt;</td><td>Ordered List</td><td>Container</td></tr>
+            <tr><td>&lt;li&gt;</td><td>List Item</td><td>Container</td></tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
