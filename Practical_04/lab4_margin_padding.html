@@ -3,35 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4 - Margin vs Padding</title>
-    <link rel="stylesheet" href="css/lab4_style.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: #f4f4f4;
+        }
+
+        .boxA {
+            padding: 40px;
+            margin: 10px;
+        }
+
+        .boxB {
+            padding: 10px;
+            margin: 40px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Margin vs Padding Challenge</h1>
 
-    <div class="container">
-        <div class="box boxA">
-            <h3>Box A</h3>
-            <p>padding: 40px</p>
-            <p>margin: 10px</p>
-        </div>
+    <h1>Margin vs Padding</h1>
 
-        <div class="box boxB">
-            <h3>Box B</h3>
-            <p>padding: 10px</p>
-            <p>margin: 40px</p>
-        </div>
+    <div class="box boxA">
+        <p>Box A - padding 40px, margin 10px</p>
     </div>
 
-    <div class="observations">
-        <h3>Observations:</h3>
-        <p><strong>1.</strong> Box A has more internal space (padding: 40px).</p>
-        <p><strong>2.</strong> Box B has more external space (margin: 40px).</p>
-        <p><strong>3.</strong> Changing margin does NOT change content position inside border.</p>
-        <p><strong>4.</strong> Changing padding DOES change the position of the content.</p>
+    <div class="box boxB">
+        <p>Box B - padding 10px, margin 40px</p>
     </div>
+
+    <h2>Observation</h2>
+
+    <ol>
+        <li>Box A has more internal space because its padding is larger.</li>
+        <li>Box B has more external space because its margin is larger.</li>
+        <li>Changing margin does not move the content inside the border.</li>
+        <li>Changing padding moves the content away from the border.</li>
+    </ol>
+
 </body>
 
 </html>

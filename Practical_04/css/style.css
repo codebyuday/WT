@@ -1,0 +1,96 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #183b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: #245a91;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.welcome {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.content {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.student-card {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 10px #bbb;
+    text-align: center;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #183b66;
+    color: white;
+    padding: 5px 12px;
+    margin: 4px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #183b66;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}

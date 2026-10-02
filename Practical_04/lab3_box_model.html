@@ -3,41 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3 - Box Model Investigation</title>
-    <link rel="stylesheet" href="css/lab3_style.css">
+    <title>Lab 3 - Box Model</title>
+    <style>
+        .box {
+            width: 200px;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: #f4f4f4;
+        }
+
+        .box1 {
+            padding: 10px;
+        }
+
+        .box2 {
+            padding: 30px;
+        }
+
+        .box3 {
+            padding: 10px;
+            border-width: 10px;
+        }
+    </style>
 </head>
 
 <body>
+
     <h1>Box Model Investigation</h1>
 
-    <div class="box box1">
-        <h3>Box 1</h3>
-        <p>Width: 200px</p>
-        <p>Padding: 10px</p>
-        <p>Border: 2px</p>
-    </div>
+    <div class="box box1">Box 1 - padding 10px, border 2px</div>
 
-    <div class="box box2">
-        <h3>Box 2</h3>
-        <p>Width: 200px</p>
-        <p>Padding: 30px</p>
-        <p>Border: 2px</p>
-    </div>
+    <div class="box box2">Box 2 - padding 30px, border 2px</div>
 
-    <div class="box box3">
-        <h3>Box 3</h3>
-        <p>Width: 200px</p>
-        <p>Padding: 10px</p>
-        <p>Border: 10px</p>
-    </div>
+    <div class="box box3">Box 3 - padding 10px, border 10px</div>
 
-    <div class="result">
-        <h3>Calculated Total Widths:</h3>
-        <p>Box 1: 200 + 10 + 10 + 2 + 2 = <strong>224px</strong></p>
-        <p>Box 2: 200 + 30 + 30 + 2 + 2 = <strong>264px</strong></p>
-        <p>Box 3: 200 + 10 + 10 + 10 + 10 = <strong>240px</strong></p>
-    </div>
+    <h2>Observation</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Box</th>
+            <th>Width</th>
+            <th>Padding</th>
+            <th>Border</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Box 1</td>
+            <td>200px</td>
+            <td>10px</td>
+            <td>2px</td>
+            <td>224px</td>
+        </tr>
+        <tr>
+            <td>Box 2</td>
+            <td>200px</td>
+            <td>30px</td>
+            <td>2px</td>
+            <td>264px</td>
+        </tr>
+        <tr>
+            <td>Box 3</td>
+            <td>200px</td>
+            <td>10px</td>
+            <td>10px</td>
+            <td>240px</td>
+        </tr>
+    </table>
+
+    <p><strong>Box 2 is the widest</strong> because it has the largest padding.</p>
+
 </body>
 
 </html>
