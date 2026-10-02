@@ -3,73 +3,232 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lab 4 - Class Timetable</title>
+    <title>Classwise Time Table - GHRCEMN</title>
     <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        .college {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        .college h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .college p {
+            font-size: 13px;
+            margin: 3px 0;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
         table {
+            width: 100%;
             border-collapse: collapse;
+            font-size: 12px;
+            text-align: center;
         }
 
         th, td {
             border: 1px solid black;
-            padding: 8px 14px;
-            text-align: center;
+            padding: 6px;
         }
 
         .recess {
             background-color: #eee;
+            font-weight: bold;
+        }
+
+        .bottom {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .subjects {
+            flex: 3;
+        }
+
+        .side {
+            flex: 1;
+        }
+
+        .subjects th, .subjects td {
+            text-align: left;
+        }
+
+        .sign {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .sign div {
+            width: 30%;
+        }
+
+        .space {
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Web Technology Laboratory</h1>
+    <div class="college">
+        <h1>G H Raisoni College of Engineering and Management, Nagpur</h1>
+        <p>An Autonomous Institute Affiliated to Rashtrasant Tukadoji Maharaj Nagpur University</p>
+        <p>Accredited by NAAC with A+ Grade</p>
+    </div>
+
+    <h2 style="text-align: center;">Department of CSE (Cyber Security)</h2>
+    <h3 style="text-align: center;">Classwise Time Table - Sem VII, Section H</h3>
+
+    <div class="info">
+        <span>Class-Room: C-1-13</span>
+        <span>Session 2026-27 (Odd)</span>
+    </div>
 
     <table>
-
-        <caption>Class Timetable</caption>
-
         <thead>
             <tr>
-                <th>Day</th>
-                <th>9-10</th>
-                <th>10-11</th>
-                <th>11-12</th>
-                <th>12-1</th>
-                <th>2-3</th>
-                <th>3-4</th>
+                <th>Day / Time</th>
+                <th>12:10 - 1:05</th>
+                <th>1:05 - 2:00</th>
+                <th class="recess">2:00 - 2:20</th>
+                <th>2:20 - 3:15</th>
+                <th>3:15 - 4:10</th>
             </tr>
         </thead>
-
         <tbody>
             <tr>
-                <td>Mon</td>
+                <td><strong>MON</strong></td>
+                <td>ACS</td>
+                <td>AIS</td>
+                <td rowspan="3" class="recess">RECESS</td>
                 <td>WT</td>
-                <td>CN</td>
-                <td>Java</td>
-                <td rowspan="3" class="recess">Lab</td>
-                <td>OS</td>
-                <td>SE</td>
+                <td>MD5</td>
             </tr>
             <tr>
-                <td>Tue</td>
-                <td>DBMS</td>
-                <td>WT</td>
-                <td>AI</td>
-                <td>CN</td>
-                <td>Java</td>
+                <td><strong>TUE</strong></td>
+                <td colspan="2">WT Lab / ACS Lab</td>
+                <td>EAR</td>
+                <td>Project</td>
             </tr>
             <tr>
-                <td>Wed</td>
-                <td>OS</td>
-                <td>DBMS</td>
+                <td><strong>WED</strong></td>
+                <td>AIS</td>
                 <td>WT</td>
-                <td>AI</td>
-                <td>CN</td>
+                <td>MD5</td>
+                <td>Aptitude</td>
             </tr>
         </tbody>
-
     </table>
+
+    <div class="bottom">
+
+        <table class="subjects">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Code</th>
+                    <th>Faculty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Technology (T+P)</td>
+                    <td>23BTCYL404</td>
+                    <td>Prof. Saurabh Vyas</td>
+                </tr>
+                <tr>
+                    <td>Applied Cyber Security</td>
+                    <td>23BTCYL401</td>
+                    <td>Prof. Shalini Kumari</td>
+                </tr>
+                <tr>
+                    <td>Advance Information Security</td>
+                    <td>23BTCYL403</td>
+                    <td>Prof. Ashwini Durbude</td>
+                </tr>
+                <tr>
+                    <td>Python Programming</td>
+                    <td>23BTCYL424</td>
+                    <td>Prof. Amit Sagale</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="side">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lab</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WT</td>
+                        <td>A-1-11</td>
+                    </tr>
+                    <tr>
+                        <td>ACS</td>
+                        <td>C-1-08</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batch</th>
+                        <th>Roll No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A1</td>
+                        <td>1 - 23</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>24 - 46</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="sign">
+        <div>
+            <div class="space"></div>
+            Timetable In-charge
+        </div>
+        <div>
+            <div class="space"></div>
+            HoD CSE-CYS
+        </div>
+        <div>
+            <div class="space"></div>
+            Dean Academics
+        </div>
+    </div>
 
 </body>
 
